@@ -4,11 +4,11 @@ class Solution:
         j=n-1
         k=n+m-1
         while i>=0 and j>=0:
-            if nums2[j]>nums1[i]:
-                nums1[k]=nums2[j]
+            if nums1[j]>nums2[i]:
+                nums1[k]=nums1[j]
                 j-=1
             else:
-                nums1[k]=nums1[i]
+                nums1[k]=nums2[i]
                 i-=1
             k-=1
         if j>=0:
